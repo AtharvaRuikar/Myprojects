@@ -15,12 +15,11 @@ function displayList() {
     display.innerHTML = "";
 
     stringArr.forEach((value,index) => {
-        console.log('hiiiii');
         const ullist = document.createElement('li');
         ullist.innerHTML = value;
 
         const delBtn = document.createElement('button');
-        button.innerHTML = 'delete';
+        delBtn.innerHTML = 'delete';
 
         display.appendChild(ullist);
         display.appendChild(delBtn);
